@@ -931,6 +931,10 @@
 				{
 					"match": "(?i)\\b(if|then|else|elsif|in|for|(?<!\\.)all|some|\\.\\.|delta|with)\\b",
 					"name": "keyword.ada"
+				},
+				{
+					"comment": "Catch identifiers to prevent internal numbers being matched as constants",
+					"match": "(?:\\w|\\d|_)+"
 				}
 			]
 		},
